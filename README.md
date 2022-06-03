@@ -24,22 +24,22 @@ I performed multiple linear regression after cleaning and testing the data. The 
 
 ## Result
 
-#### Base Model
+### Base Model
 
-<img align="center" width="400" height="400" src='images/heatmap.png'>
+<img align="center" width="600" height="600" src='images/heatmap.png'>
 
 The base model shows that sqft_above(independent variable) has high correlation with price(dependent variable). In Basic linear model high R-squared value (0.80) and low P-value(0) shows there is a relationship between variables. Q-Q data plot is not normally distributed and scatter plots are very homoscedastic.However this model is inconclusive because there is not enough data and sqft_living is too highly correlated with the other predictors.
 
 
-#### Model1
+### Model1
 
-<img align="center" width="600" height="100" src='images/Basic_model_qqplot.png'>
+<img align="center" width="600" height="400" src='images/Basic_model_qqplot.png'>
 
 The first model R-squared value is 0.90 which is higher then my basic model(.79).P-value for each feature in the first model is 0. The scatter plot is a lot more homoscedastic than the basic model and the Q-Q plot still shows that the data is not normally distributed. I can assume that house price increases in a non-linear fashion.
 
 ### Final Model
 
-<img align="center" width="600" height="100" src='images/final_qqplot.png'>
+<img align="center" width="600" height="400" src='images/final_qqplot.png'>
 
 On the final model the R-squared score dropped to 0.765 and all predictors in the final dataframe have a low p-value. The Q-Q plot shows the model is normally distributed and the scatter plot shows the data is homoscedastic.
 
@@ -51,12 +51,16 @@ On the final model the R-squared score dropped to 0.765 and all predictors in th
 - The King county grading system also impacted the house price. The coeffient is 0.1830 meaning it's the fourth most important feature.
 - The sqft_above column was the highest correlated with price and increase house value.Bigger the houses the more they cost.
 
+## Next Step
+
+After seeing there is an outliers next step would be to evaluate for other outlier and revome them for a better model Additional analysis could provide further insights into how zipcode impacted on the house price Determining further in the data accuracy If I have time I will also try polynomial regression model
+
 ## For More Information
 See the full analysis in the Jupyter Notebook or review this presentation.
 
 For additional info, contact Gamze Turan at ginaturan15@gmail.com
 
-<img align="center" width="600" height="100" src='images/king-county-logo.png'>
+<img align="center" width="400" height="100" src='images/king-county-logo.png'>
 
 ## Repository Structure 
 
